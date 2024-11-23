@@ -22,6 +22,11 @@ header {
   color: white;
 }
 
+h1 {
+font-size: 25px;
+}
+
+
 img {
 		height: 280px;
 		width: 280px;
@@ -130,6 +135,137 @@ section::after {
 }
 
 
+.css-typing p {
+  border-right: .15em solid orange;
+  font-family: Verdana; 
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 35em;
+  -webkit-animation: type 3s steps(40, end);
+  animation: type 3s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 35em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+.css-typing p:nth-child(3) {
+  width: 35em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+
 #div1 {
   font-size:32px;
   color: #ffffff;
@@ -189,11 +325,18 @@ footer {
   <article>
 <div id="typewriter-container">
 <h1>I'm Zahra</h1>
-  <p class="typewriter">My full name is Zahra Ananda Saqila Zul Putri and originally from Indonesia, Balikpapan, East Borneo.</p>
-  <p class="typewriter">Just an ordinary person who interested in Art & Tech.</p>
-  <p class="typewriter">Know me more? Just click those links from the left side ^_^</p>
-</div>
 
+<div class="css-typing">
+  <p>
+    My full name is Zahra Ananda Saqila Zul Putri 
+	<br> and originally from Indonesia Balikpapan, East Borneo.
+  </p>
+  <p>
+    Just an ordinary person who interested in Art & Tech.
+  </p>
+  <p>
+    Know me more? Just click those links from the left side ^_^
+  </p>
 </article>
 </section>
 <footer>
