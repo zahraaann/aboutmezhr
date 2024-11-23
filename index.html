@@ -130,6 +130,12 @@ section::after {
 }
 
 
+#div1 {
+  font-size:42px;
+  color: #ffffff;
+}
+
+
 /* Style the footer */
 footer {
   background-color: #777;
@@ -191,9 +197,23 @@ footer {
 </article>
 </section>
 <footer>
-  <p>Thanks ☺</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body> 
+Thanks
+<div id="div1" class="fa"></div> 
+  <script>
+function smile() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf118;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf11a;";
+    }, 5500);
+}
+smile();
+setInterval(smile, 2000);
+</script>
 </footer>
-
 </body>
 </html>
 
