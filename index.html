@@ -38,7 +38,7 @@ img {
 nav {
   float: left;
   width: 43%;
-  height: 400px; 
+  height: 420px; 
   background: #b0c8dc;
   padding: 20px;
   align: center;
@@ -78,10 +78,10 @@ nav ul {
 
 article {
   float: left;
-  padding: 8px;
+  padding: 20px;
   width: 57%;
   background-color: #f1f1f1;
-  height: 400px; 
+  height: 420px; 
 }
 
 section::after {
@@ -90,19 +90,24 @@ section::after {
   clear: both;
 }
 
+p {margin-bottom: 0em;  margin-top: 0em;}
+
+
 #typewriter-container {
-  max-width: 600px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
 .typewriter {
+  padding: 1px;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   overflow: hidden;
   width: 0; /* Start with zero width */
   animation: typing 4s steps(30) forwards, blink 0.75s step-end infinite;
 }
+
 
 /* Define typing animation */
 @keyframes typing {
@@ -121,17 +126,52 @@ section::after {
 /* Add delays for each paragraph using :nth-child pseudo-class */
 .typewriter:nth-child(1) {
   animation-delay: 0s;
-/* No delay for the first paragraph */
 }
 
 .typewriter:nth-child(2) {
   animation-delay: 0s;
- /* Delay for second paragraph to start after the first */
 }
 
 .typewriter:nth-child(3) {
   animation-delay: 0s;
-/* Delay for third paragraph to start after the second */
+}
+
+
+.typewriter:nth-child(4) {
+  animation-delay: 0s;
+}
+
+
+.typewriter:nth-child(5) {
+  animation-delay: 0s;
+}
+
+
+.typewriter:nth-child(6) {
+  animation-delay: 0s;
+}
+
+.typewriter:nth-child(7) {
+  animation-delay: 0s;
+}
+
+.typewriter:nth-child(8) {
+  animation-delay: 0s;
+}
+
+
+.typewriter:nth-child(9) {
+  animation-delay: 0s;
+}
+
+
+.typewriter:nth-child(10) {
+  animation-delay: 0s;
+}
+
+
+.typewriter:nth-child(11) {
+  animation-delay: 0s;
 }
 
 
@@ -141,11 +181,13 @@ section::after {
   font-size: 18px;
   white-space: nowrap;
   overflow: hidden;
+  margin-bottom
 }
+
 .css-typing p:nth-child(1) {
-  width: 35em;
-  -webkit-animation: type 3s steps(40, end);
-  animation: type 3s steps(40, end);
+  width: 16em;
+  -webkit-animation: type 1s steps(40, end);
+  animation: type 1s steps(40, end);
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -155,8 +197,8 @@ section::after {
   opacity: 0;
   -webkit-animation: type2 2s steps(40, end);
   animation: type2 2s steps(40, end);
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -167,11 +209,105 @@ section::after {
   opacity: 0;
   -webkit-animation: type2 2s steps(40, end);
   animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(4) {
+  width: 35em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+.css-typing p:nth-child(5) {
+  width: 35em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(6) {
+  width: 30em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
   -webkit-animation-delay: 4s;
   animation-delay: 4s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+
+
+.css-typing p:nth-child(7) {
+  width: 35em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+.css-typing p:nth-child(8) {
+  width: 35em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(9) {
+  width: 28em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+.css-typing p:nth-child(10) {
+  width: 28em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(11) {
+  width: 35em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
 
 
 @keyframes type {
@@ -322,28 +458,42 @@ footer {
       	<p>
   </ul> 
   </nav>
-  <article>
+<article>
 <div id="typewriter-container">
 <h1>I'm Zahra</h1>
-<div class="css-typing"> 
-<p align="justify">
-    My full name is 
-	<br> Zahra Ananda Saqila Zul Putri 
-	<br> and originally from Indonesia 
-	<br> Balikpapan, East Borneo.
-  </p>
-  <p align="justify">
-    Just an ordinary person 
-	<br> who interested in Art & Tech.
-  </p>
-  <p align="justify">
+<div class="css-typing">
+  <p class="typewriter">
+    My full name is
+	 <p class="typewriter">
+	 Zahra Ananda Saqila Zul Putri 
+	 </p>
+	<p class="typewriter"> 
+	and originally from Indonesia
+	</p>	
+	<p class="typewriter"> 
+	Balikpapan, East Borneo.
+</p>
+<br>
+
+ <p class="typewriter">
+    Just an ordinary person
+	</p>
+	 <p class="typewriter">
+	 who interested in Art & Tech.
+	 </p>
+<br>
+
+  <p class="typewriter">
     Know me more? 
-	<br> Just click those links 
-	<br> from the left side ^_^
-  </p>
+	 <p class="typewriter">
+	 Just click those links 
+	 </p>
+	<p class="typewriter"> 
+	from the left side ^_^
+	</p>
+</div>
+</div>
 </article>
-</div>
-</div>
 </section>
 <footer>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
